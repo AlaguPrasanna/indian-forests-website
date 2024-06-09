@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/bb.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  padding-right: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 100px;
+  text-shadow: 10px 20px 20px black;
+}
+
+p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.25;
+  text-shadow: 10px 20px 20px black;
+}
+
+button {
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.card {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+  box-shadow: 10px 10px 20px rgb(57, 57, 57);
+}
+
+.card1 {
+  background-image: url(./images/ever2.jpeg);
+}
+
+.card2 {
+  background-image: url(./images/deci2.png);
+}
+
+.card3 {
+  background-image: url(./images/thorn.png);
+}
+
+.card4 {
+  background-image: url(./images/coni3.webp);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+h3 {
+  color: white;
+  text-shadow: 0 0 5px #999;
+  width: fit-content;
+}
+
+.card p {
+  text-shadow: 0 0 15px #000;
+  font-size: 8px;
+  color: rgb(249, 250, 249);
+}
+
+form {
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#error-message {
+  color: red;
+}
+
+select {
+  margin-left: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+  }
+
+  h1 {
+      font-size: 60px;
+  }
+
+  .card {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+}
